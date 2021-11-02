@@ -9,7 +9,7 @@
     <meta http-equiv="Last-Modified" content="0">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <title>Mi Tienda Online</title>
+    <title>HCA</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/PluginsCSS")
@@ -17,9 +17,9 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-info" style="font-weight:bold">
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-info" style="font-size:20px;">
         <a class="navbar-brand" href="#">
-            <img src="@Url.Content("~/Imagenes/HCA.png")" width="110" alt="logo">
+            <img src="@Url.Content("~/Imagenes/HCA_logo_blue.png")" width="110" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" name="Home" href="@Url.Action("Index", "Home")"><i class="fas fa-home"></i> Inicio</a>
+                    <a class="nav-link" name="Home" href="@Url.Action("Index", "Home")"><i class="fas fa-house-user"></i> Inicio</a>
                 </li>
                 @Html.ActionLinkAllow()
                 

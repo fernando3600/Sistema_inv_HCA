@@ -74,7 +74,11 @@ $(document).ready(function () {
         "language": {
             "url": $.MisUrls.url.Url_datatable_spanish
         },
-        responsive: true
+        responsive: true,
+        "scrollY": "400px",
+        "scrollCollapse": true,
+        "paging": false,
+        "bPaginate": false
     });
 
     tablacliente = $('#tbcliente').DataTable({
@@ -100,7 +104,11 @@ $(document).ready(function () {
         "language": {
             "url": $.MisUrls.url.Url_datatable_spanish
         },
-        responsive: true
+        responsive: true,
+        "scrollY": "400px",
+        "scrollCollapse": true,
+        "paging": false,
+        "bPaginate": false
     });
 
 })

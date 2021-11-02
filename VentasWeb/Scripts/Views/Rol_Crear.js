@@ -26,16 +26,16 @@ $(document).ready(function () {
             {
                 "data": "Activo", "render": function (data) {
                     if (data) {
-                        return '<span class="badge badge-success">Activo</span>'
+                        return '<span class="badge badge-success"><i class="fas fa-check"></i></span>'
                     } else {
-                        return '<span class="badge badge-danger">No Activo</span>'
+                        return '<span class="badge badge-danger"><i class="fas fa-times-circle"></i></span>'
                     }
                 }
             },
             {
                 "data": "IdRol", "render": function (data, type, row, meta) {
-                    return "<button class='btn btn-primary btn-sm' type='button' onclick='abrirPopUpForm(" + JSON.stringify(row) + ")'><i class='fas fa-pen'></i></button>" +
-                        "<button class='btn btn-danger btn-sm ml-2' type='button' onclick='eliminar(" + data + ")'><i class='fa fa-trash'></i></button>"
+                    return "<button class='btn btn-info btn-sm' type='button' onclick='abrirPopUpForm(" + JSON.stringify(row) + ")'><i class='fas fa-edit'></i></button>" +
+                        "<button class='btn btn-danger btn-sm ml-2' type='button' onclick='eliminar(" + data + ")'><i class='fas fa-trash-alt'></i></button>"
                 },
                 "orderable": false,
                 "searchable": false,
@@ -46,7 +46,11 @@ $(document).ready(function () {
         "language": {
             "url": $.MisUrls.url.Url_datatable_spanish
         },
-        responsive: true
+        responsive: true,
+        "scrollY": "400px",
+        "scrollCollapse": true,
+        "paging": false,
+        "bPaginate": false
     });
 
 
