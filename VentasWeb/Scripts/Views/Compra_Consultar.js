@@ -96,7 +96,11 @@ $(document).ready(function () {
             "type": "GET",
             "datatype": "json"
         },
+        "columnDefs": [
+            { "visible": false, "targets": 0 }
+        ],
         "columns": [
+            
             {
                 "data": "IdCompra", render: function (data) {
                     return "<button class='btn btn-success btn-sm ml-2' type='button' onclick='Imprimir(" + data + ")'><i class='far fa-clipboard'></i> Ver</button>"
