@@ -80,8 +80,7 @@ $('#btnBuscar').on('click', function () {
 
                     $("<tr>").append(
                         $("<td>").text(row["FechaVenta"]),
-                        $("<td>").text(row["NumeroDocumento"]),
-                        $("<td>").text(row["TipoDocumento"]),
+                        $("<td>").text(row["NumeroDocumento"]),                        
                         $("<td>").text(row["NombreTienda"]),
                         $("<td>").text(row["RucTienda"]),
                         $("<td>").text(row["NombreEmpleado"]),

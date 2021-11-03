@@ -28,6 +28,9 @@ $(document).ready(function () {
             "type": "GET",
             "datatype": "json"
         },
+        "columnDefs": [
+            { "visible": false, "targets": 0 }
+        ],
         "columns": [
             { "data": "TipoDocumento" },
             { "data": "NumeroDocumento" },

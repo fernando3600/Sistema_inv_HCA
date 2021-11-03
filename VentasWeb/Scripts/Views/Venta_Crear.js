@@ -87,6 +87,9 @@ $(document).ready(function () {
             "type": "GET",
             "datatype": "json"
         },
+        "columnDefs": [
+            { "visible": false, "targets": 1 }
+        ],
         "columns": [
             {
                 "data": "IdCliente", "render": function (data, type, row, meta) {

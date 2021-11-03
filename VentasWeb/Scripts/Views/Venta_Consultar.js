@@ -37,6 +37,9 @@ $(document).ready(function () {
             "type": "GET",
             "datatype": "json"
         },
+        "columnDefs": [
+            { "visible": false, "targets": [1,4] }
+        ],
         "columns": [
             {
                 "data": "IdVenta", render: function (data) {
