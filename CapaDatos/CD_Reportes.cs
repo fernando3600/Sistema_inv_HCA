@@ -103,8 +103,7 @@ namespace CapaDatos
                             lista.Add(new ReporteVenta()
                             {
                                 FechaVenta = dr["Fecha Venta"].ToString(),
-                                NumeroDocumento = dr["Numero Documento"].ToString(),
-                                TipoDocumento = dr["Tipo Documento"].ToString(),
+                                NumeroDocumento = dr["Numero Documento"].ToString(),                             
                                 NombreTienda = dr["Nombre Tienda"].ToString(),
                                 RucTienda = dr["Ruc Tienda"].ToString(),
                                 NombreEmpleado = dr["Nombre Empleado"].ToString(),

@@ -47,7 +47,7 @@ $(document).ready(function () {
         "columns": [
             {
                 "data": "IdProductoTienda", "render": function (data, type, row, meta) {
-                    return "<button class='btn btn-sm btn-primary ml-2' type='button' onclick='productoSelect(" + JSON.stringify(row) + ")'><i class='fas fa-check'></i></button>"
+                    return "<button class='btn btn-sm ml-2 btn-add' type='button' onclick='productoSelect(" + JSON.stringify(row) + ")'><i class='fas fa-check'></i></button>"
                 },
                 "orderable": false,
                 "searchable": false,
@@ -93,7 +93,7 @@ $(document).ready(function () {
         "columns": [
             {
                 "data": "IdCliente", "render": function (data, type, row, meta) {
-                    return "<button class='btn btn-sm btn-primary ml-2' type='button' onclick='clienteSelect(" + JSON.stringify(row) + ")'><i class='fas fa-check'></i></button>"
+                    return "<button class='btn btn-sm ml-2 btn-add' type='button' onclick='clienteSelect(" + JSON.stringify(row) + ")'><i class='fas fa-check'></i></button>"
                 },
                 "orderable": false,
                 "searchable": false,

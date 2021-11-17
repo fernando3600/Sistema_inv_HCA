@@ -121,12 +121,12 @@
                             <tbody>
                                 @foreach (var item in Model.oListaDetalleVenta)
                                 {
-                                    <tr>
-                                        <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.NombreProducto)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.TextoPrecioUnidad)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.TextoImporteTotal)</td>
-                                    </tr>
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.NombreProducto)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TextoPrecioUnidad)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TextoImporteTotal)</td>
+                                </tr>
                                 }
                             </tbody>
                         </table>

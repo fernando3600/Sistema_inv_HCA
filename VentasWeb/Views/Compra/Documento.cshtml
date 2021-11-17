@@ -53,24 +53,33 @@
                         <table id="cabezera">
                             <tr>
                                 <td style="width:140px">
-                                    <img src="@Url.Content("~/Imagenes/tienda.png")" alt="" height="70">
+                                    <img src="@Url.Content("~/Imagenes/HCA_logo.jpeg")" alt="" height="70">
                                 </td>
                                 <td style="width:340px">
                                     <table style="width:100%">
-                                        <tr><td><label style="font-size:20px;font-weight:bold;text-align:center;width:100%;display:block">MI TIENDA ONLINE S.A.C TEST</label></td></tr>
-                                        <tr><td><label style="text-align:center;width:100%;display:block">test@gmmail.com</label></td></tr>
+                                        <tr><td><label style="font-size:20px;font-weight:bold;text-align:center;width:100%;display:block">HCA distribuidora</label></td></tr>
+
                                     </table>
                                 </td>
                                 <td style="width:150px;">
                                     <table style="height: 90px; width:100%; font-weight: bold;border:2px solid #85929E;">
                                         <tbody>
-                                            <tr style="color:#fff;background-color:#85929E; -webkit-print-color-adjust: exact;"><td align="center">COMPRA</td></tr>
-                                            <tr><td align="center">NRO - <span>@Html.DisplayTextFor(model => model.Codigo)</span> </td></tr>
-                                            <tr><td align="center">Fecha - <span>@Html.DisplayTextFor(model => model.FechaCompra)</span> </td></tr>
+                                            <tr style=" -webkit-print-color-adjust: exact;"><td align="center">COMPRA</td></tr>
+                                            <tr><td align="center" style="background-color: #85929E;">Numero de Ticket </td></tr>
+                                            <tr><td align="center"> <span>@Html.DisplayTextFor(model => model.Codigo)</span> </td></tr>
                                         </tbody>
                                     </table>
                                 </td>
                             </tr>
+                        </table>
+                        <table style="width: 100%;">
+                            <tbody>
+                                
+                                <tr>
+                                    <td width="15">Fecha: </td>
+                                    <td style="border-bottom: 1px solid black;"><center><span>@Html.DisplayTextFor(model => model.FechaCompra)</span></center></td>                                   
+                                </tr>
+                            </tbody>
                         </table>
 
                     </td>
@@ -86,7 +95,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="15">Ruc:</td>
+                                    <td width="15">Referencia:</td>
                                     <td style="border-bottom: 1px solid black;"><center><span>@Html.DisplayTextFor(model => model.oProveedor.Ruc)</span></center></td>
                                     <td width="100">Razon Social:</td>
                                     <td style="border-bottom: 1px solid black;"><center><span>@Html.DisplayTextFor(model => model.oProveedor.RazonSocial)</span></center></td>
@@ -106,7 +115,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td width="15">Ruc:</td>
+                                    <td width="15">Referencia:</td>
                                     <td style="border-bottom: 1px solid black;"><center><span>@Html.DisplayTextFor(model => model.oTienda.RUC)</span></center></td>
                                     <td width="110">Nombre Tienda:</td>
                                     <td style="border-bottom: 1px solid black;"><center><span id="nombretienda">@Html.DisplayTextFor(model => model.oTienda.Nombre)</span></center></td>
@@ -128,7 +137,7 @@
                                 <tr bgcolor="#D9D9D9">
                                     <th style="width: 15%;">Cantidad</th>
                                     <th style="width: 50%;">Concepto</th>
-                                    <th style="width: 20%;">P.Unit Compra</th>
+                                    <th style="width: 20%;">P.Unitario</th>
                                     <th style="width: 25%;">Importe</th>
                                 </tr>
                             </thead>
@@ -136,12 +145,13 @@
                                 @foreach (var item in Model.oListaDetalleCompra)
                                 {
 
-                                    <tr>
-                                        <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.oProducto.Nombre)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.PrecioUnitarioCompra)</td>
-                                        <td>@Html.DisplayFor(modelItem => item.TotalCosto)</td>
-                                    </tr>
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.Cantidad)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.oProducto.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.PrecioUnitarioCompra)</td>
+                                    
+                                    <td>@Html.DisplayFor(modelItem => item.TotalCosto)</td>
+                                </tr>
                                 }
                             </tbody>
                         </table>

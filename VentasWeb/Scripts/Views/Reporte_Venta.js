@@ -44,7 +44,8 @@ $(document).ready(function () {
             $("#cboTienda").html("");
 
             $("<option>").attr({ "value": 0 }).text("-- Seleccionar todas--").appendTo("#cboTienda");
-            if (data.data != null)
+            //data.data != null
+            if (true)
                 $.each(data.data, function (i, item) {
 
                     if (item.Activo == true) {
@@ -65,14 +66,15 @@ $(document).ready(function () {
 $('#btnBuscar').on('click', function () {
 
     jQuery.ajax({
-        url: $.MisUrls.url._ObtenerReporteVenta + "?fechainicio=" + $("#txtFechaInicio").val() + "&fechafin=" + $("#txtFechaFin").val() + "&idtienda=" + $("#cboTienda").val() ,
+        //"?fechainicio=" + $("#txtFechaInicio").val() + "&fechafin=" + $("#txtFechaFin").val() +
+        url: $.MisUrls.url._ObtenerReporteVenta  +  "?idtienda=" + $("#cboTienda").val() ,
         type: "GET",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function (data) {
-
-            if (data != undefined && data != null) {
-
+            //data != undefined && data != null
+            if (true) {
+                console.log(data);
                 $("#tbReporte tbody").html("");
 
 

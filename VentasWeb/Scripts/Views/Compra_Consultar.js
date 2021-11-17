@@ -98,10 +98,11 @@ $(document).ready(function () {
         },
         
         "columns": [
+
             
             {
                 "data": "IdCompra", render: function (data) {
-                    return "<button class='btn btn-success btn-sm ml-2' type='button' onclick='Imprimir(" + data + ")'><i class='far fa-clipboard'></i> Ver</button>"
+                    return "<button class='btn btn-primary btn-sm ml-2' type='button' onclick='Imprimir(" + data + ")'><i class='far fa-clipboard'></i> Ver</button>"
                 }
             },
             { "data": "NumeroCompra" },
@@ -125,6 +126,7 @@ $(document).ready(function () {
            
 
         ],
+        
         "language": {
             "url": $.MisUrls.url.Url_datatable_spanish
         },
