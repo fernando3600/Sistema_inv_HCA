@@ -1837,9 +1837,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Imagenes\HCA_logo.jpeg" />
     <Content Include="Imagenes\HCA_logo_blue.png" />
-    <Content Include="Imagenes\logo.png" />
-    <Content Include="Imagenes\tienda.png" />
-    <Content Include="Imagenes\tiendalogo.png" />
+    <Content Include="Imagenes\image1.jpg" />
+    <Content Include="Imagenes\image2.jpg" />
+    <Content Include="Imagenes\image3.jpg" />
+    <Content Include="Imagenes\image4.png" />
     <Content Include="Imagenes\welcomeHCA.jpeg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
